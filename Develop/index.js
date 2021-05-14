@@ -24,42 +24,44 @@ const promptUser = () => {
     {
       type: "input",
       name: "description",
-      message: "Enter a description of the project",
+      message: "Enter a description of the project:",
     },
     {
       type: "input",
       name: "install",
-      message: "Enter install instructions for the project",
+      message:
+        "Enter install instructions for the project (I.E. NPM commands):",
     },
     {
       type: "input",
       name: "usage",
-      message: "Please enter usage",
+      message: "Please explain how to use the application:",
     },
     {
-      type: "input",
+      type: "list",
+      message: "Please select a license to display for the README: ",
       name: "license",
-      message: "Please enter any license information regarding the project",
+      choices: ["MIT", "GPL", "Apache", "BSD", "MIT/Apache-2.0"],
     },
     {
       type: "input",
       name: "contributions",
-      message: "Enter any other contributions to this project",
+      message: "Enter any other contributions to this project:",
     },
     {
       type: "input",
       name: "tests",
-      message: "Please enter any testing instructions",
+      message: "Please enter any testing instructions:",
     },
     {
       type: "input",
       name: "github",
-      message: "Please enter your github username",
+      message: "Please enter your github username:",
     },
     {
       type: "input",
       name: "email",
-      message: "Please enter your email address",
+      message: "Please enter your email address:",
     },
   ]);
 };

@@ -1,30 +1,44 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(data) {
+  return data.license ? `![License: ${data.license}]` : "";
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(data) {
+  return data.license
+    ? `(https://img.shields.io/badge/License-${data.license}-blue)`
+    : "";
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(data) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+  ![License](https://img.shields.io/badge/license-${data.license}-blue.svg)
+
   ## Table of Contents
-  ${[data]}
+  * [Description](#description)\n
+  * [Install](#installation)\n
+  * [Usage](#usage)\n
+  * [License](#license)\n
+  * [Contributing](#contributing)\n
+  * [Tests](#tests)\n
+  * [Questions](#questions)\n
 
   ## Description
-  ${data.description}
-
-  
+  ${data.description}  
 
   ## Installation
   ${data.install}
+
   ## Usage
   ${data.usage}
+
   ## Contributing
   ${data.contributions}
 
@@ -32,9 +46,7 @@ function generateMarkdown(data) {
   ${data.testing}   
 
   ## Questions
-  Here is a link to my github for more information: https://github.com/${
-    data.github
-  }
+  Here is a link to my github for more information: https://github.com/${data.github}
 
   You can reach me with any additional questions by email: ${data.email} 
 
