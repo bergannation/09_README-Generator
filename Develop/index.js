@@ -1,14 +1,15 @@
 // TODO: Include packages needed for this application
 
-// TODO: Create an array of questions for user input
-const questions = [];
+// // TODO: Create an array of questions for user input
+// const questions = [];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {}
 
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // create writeFile function using promises instead of a callback function
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -17,66 +18,57 @@ const promptUser = () => {
   return inquirer.prompt([
     {
       type: "input",
-      name: "name",
-      message: "What is your name?",
+      name: "title",
+      message: "What is your README Title?",
     },
     {
       type: "input",
-      name: "location",
-      message: "Where are you from?",
+      name: "description",
+      message: "Enter a description of the project",
     },
     {
       type: "input",
-      name: "hobby",
-      message: "What is your favorite hobby?",
+      name: "install",
+      message: "Enter install instructions for the project",
     },
     {
       type: "input",
-      name: "food",
-      message: "What is your favorite food?",
+      name: "usage",
+      message: "Please enter usage",
+    },
+    {
+      type: "input",
+      name: "license",
+      message: "Please enter any license information regarding the project",
+    },
+    {
+      type: "input",
+      name: "contributions",
+      message: "Enter any other contributions to this project",
+    },
+    {
+      type: "input",
+      name: "tests",
+      message: "Please enter any testing instructions",
     },
     {
       type: "input",
       name: "github",
-      message: "Enter your GitHub Username",
+      message: "Please enter your github username",
     },
     {
       type: "input",
-      name: "linkedin",
-      message: "Enter your LinkedIn URL.",
+      name: "email",
+      message: "Please enter your email address",
     },
   ]);
 };
 
-const generateHTML = (answers) =>
-  `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Hi! My name is ${answers.name}</h1>
-    <p class="lead">I am from ${answers.location}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-    <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${answers.github}</li>
-      <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
-    </ul>
-  </div>
-</div>
-</body>
-</html>`;
-
 // Bonus using writeFileAsync as a promise
 const init = () => {
   promptUser()
-    .then((answers) => writeFileAsync("index.html", generateHTML(answers)))
-    .then(() => console.log("Successfully wrote to index.html"))
+    .then((data) => writeFileAsync("README.md", generateMarkdown(data)))
+    .then(() => console.log("Successfully wrote to README.md"))
     .catch((err) => console.error(err));
 };
 
