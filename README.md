@@ -1,49 +1,51 @@
-# asdfas
+# High-Quality README Generator
+  ![License](https://img.shields.io/badge/license-Apache-blue.svg)
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+  ## Table of Contents
+  * [Description](#description)
 
-## Table of Contents
+  * [Install](#installation)
 
-- [Description](#description)
+  * [Usage](#usage)
 
-- [Install](#installation)
+  * [License](#license)
 
-- [Usage](#usage)
+  * [Contributing](#contributing)
 
-- [License](#license)
+  * [Tests](#tests)
 
-- [Contributing](#contributing)
+  * [Questions](#questions)
 
-- [Tests](#tests)
 
-- [Questions](#questions)
+  ## Description
+  It is important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions. You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time toworking on the project. This project will show and describe on how to do just that.  
 
-## Description
+  ## Installation
+  The user will be required to use the Inquirer package via NodeJS & NPM commands. The user will input the following in their command line to install the neccessary packages:
 
-asdfsd
+  npm i
+  
+  ## Usage
+  The user will begin the process by invoking the application in NodeJS. The application will be invoked by using the following command:
 
-## Installation
+  node index.js 
 
-asdfsafd
+  ![alt text](images/capture1.png)
 
-## Usage
 
-saasdf
+  ![alt text](images/capture2.png)
 
-## Contributing
+  ## Contributing
+  The user can input any other contributions to this application in this section.
 
-sfasdf
+  ## Tests
+  Testing: run "npm test" in your command line for testing. This application does not require any testing.   
 
-## Tests
+  ## Questions
+  Here is a link to my github for more information: [Github]: https://github.com/BerganNation
 
-undefined
+  You can reach me with any additional questions by email: BerganNation@gmail.com 
 
-## Questions
-
-Here is a link to my github for more information: https://github.com/asdfsdf
-
-You can reach me with any additional questions by email: asdf
-
-## License
-
-MIT
+  ## License
+  This project is brought to you with a Apache license.
+  

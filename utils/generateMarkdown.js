@@ -34,24 +34,30 @@ function generateMarkdown(data) {
   ${data.description}  
 
   ## Installation
-  ${data.install}
-
+  ${data.install}\n
+  npm i
+  
   ## Usage
-  ${data.usage}
+  ${data.usage}\n
+  node index.js \n
+  ![alt text](images/capture1.png)\n
+
+  ![alt text](images/capture2.png)
 
   ## Contributing
   ${data.contributions}
 
   ## Tests
-  ${data.testing}   
+  ${data.tests}   
 
   ## Questions
-  Here is a link to my github for more information: https://github.com/${data.github}
+  Here is a link to my github for more information: [Github]: https://github.com/${data.github}
 
   You can reach me with any additional questions by email: ${data.email} 
 
   ## License
-  ${data.license}
+  This project is brought to you with a ${data.license} license.
+  
 `;
 }
 
