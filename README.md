@@ -1,51 +1,58 @@
 # High-Quality README Generator
-  ![License](https://img.shields.io/badge/license-Apache-blue.svg)
 
-  ## Table of Contents
-  * [Description](#description)
+![License](https://img.shields.io/badge/license-Apache-blue.svg)
 
-  * [Install](#installation)
+## Table of Contents
 
-  * [Usage](#usage)
+- [Description](#description)
 
-  * [License](#license)
+- [Install](#installation)
 
-  * [Contributing](#contributing)
+- [Usage](#usage)
 
-  * [Tests](#tests)
+- [License](#license)
 
-  * [Questions](#questions)
+- [Contributing](#contributing)
 
+- [Tests](#tests)
 
-  ## Description
-  It is important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions. You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time toworking on the project. This project will show and describe on how to do just that.  
+- [Questions](#questions)
 
-  ## Installation
-  The user will be required to use the Inquirer package via NodeJS & NPM commands. The user will input the following in their command line to install the neccessary packages:
+## Description
 
-  npm i
-  
-  ## Usage
-  The user will begin the process by invoking the application in NodeJS. The application will be invoked by using the following command:
+It is important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions. You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time toworking on the project. This project will show and describe on how to do just that.  
+ ![alt text](images/readmegif.gif)
 
-  node index.js 
+## Installation
 
-  ![alt text](images/capture1.png)
+The user will be required to use the Inquirer package via NodeJS & NPM commands. The user will input the following in their command line to install the neccessary packages:
 
+npm i
 
-  ![alt text](images/capture2.png)
+## Usage
 
-  ## Contributing
-  The user can input any other contributions to this application in this section.
+The user will begin the process by invoking the application in NodeJS. The application will be invoked by using the following command:
 
-  ## Tests
-  Testing: run "npm test" in your command line for testing. This application does not require any testing.   
+node index.js
 
-  ## Questions
-  Here is a link to my github for more information: [Github]: https://github.com/BerganNation
+![alt text](images/capture1.png)
 
-  You can reach me with any additional questions by email: BerganNation@gmail.com 
+![alt text](images/capture2.png)
 
-  ## License
-  This project is brought to you with a Apache license.
-  
+## Contributing
+
+The user can input any other contributions to this application in this section.
+
+## Tests
+
+Testing: run "npm test" in your command line for testing. This application does not require any testing.
+
+## Questions
+
+Here is a link to my github for more information: [Github]: https://github.com/BerganNation
+
+You can reach me with any additional questions by email: BerganNation@gmail.com
+
+## License
+
+This project is brought to you with a Apache license.
